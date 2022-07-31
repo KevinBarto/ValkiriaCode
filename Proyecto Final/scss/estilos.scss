@@ -222,7 +222,7 @@ i:hover{
     }
 
     .card-text{
-        display: flex;
-        justify-content:end;
+        visibility: hidden;
+        display:none;
     }
 }
