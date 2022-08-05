@@ -72,8 +72,14 @@ $bordecolor: (
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 255px 255px;
 }
-.img{
-    border-radius: 50%;
+.fotologo{
+    radius: 30px  !important;
+}
+
+.fotologo2{
+    @extend .fotologo;
+    // no anduvo por boostrap -.-
+
 }
 
 .titulo{
@@ -227,10 +233,3 @@ i:hover{
 }  
 }
 
-
-@media (width < 500px){
-    .card .cardtext{
-        overflow: scroll;
-        
-    }
-}
