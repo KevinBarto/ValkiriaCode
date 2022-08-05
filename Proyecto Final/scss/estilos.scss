@@ -37,15 +37,32 @@ span{
     justify-content:space-around;
 }
 
-.bordes{
-    height: auto;
-    border:8px outset $color2;
-    border-radius: 5px;
-    margin: 25px;
-    padding: 0px 30px 30px 30px;
+// .bordes{
+//     height: auto;
+//     border:8px outset $color2;
+//     border-radius: 5px;
+//     margin: 25px;
+//     padding: 0px 30px 30px 30px;
     
-}
+// }
+$bordecolor: (
+    color1:rgb(0, 255, 94),
+    color2:rgb(2, 79, 4),
+    color3:rgb(61, 141, 4),
+    color4:rgb(0, 128, 49),
+    color5:rgb(113, 187, 113),
+    color6:rgb(145, 238, 124),
+);
 
+@each $key, $value in $bordecolor {
+    .bordes--#{$key} {
+        height: auto;
+        border:8px outset $value;
+        border-radius: 5px;
+        margin: 25px;
+        padding: 0px 30px 30px 30px;
+}
+}
 
 /* home */
 .contenido{

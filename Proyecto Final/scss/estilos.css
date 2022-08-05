@@ -33,9 +33,49 @@ span {
   justify-content: space-around;
 }
 
-.bordes {
+.bordes--color1 {
   height: auto;
-  border: 8px outset rgb(1, 105, 1);
+  border: 8px outset rgb(0, 255, 94);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color2 {
+  height: auto;
+  border: 8px outset rgb(2, 79, 4);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color3 {
+  height: auto;
+  border: 8px outset rgb(61, 141, 4);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color4 {
+  height: auto;
+  border: 8px outset rgb(0, 128, 49);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color5 {
+  height: auto;
+  border: 8px outset rgb(113, 187, 113);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color6 {
+  height: auto;
+  border: 8px outset rgb(145, 238, 124);
   border-radius: 5px;
   margin: 25px;
   padding: 0px 30px 30px 30px;
@@ -196,17 +236,7 @@ i:hover {
   }
 }
 @media (width < 500px) {
-  .card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  .card-img-top {
-    justify-content: flex-start;
-  }
-  .card-text {
-    display: flex;
-    justify-content: end;
+  .cardtext {
+    overflow: auto !important;
   }
 }/*# sourceMappingURL=estilos.css.map */
