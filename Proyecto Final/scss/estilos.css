@@ -236,7 +236,7 @@ i:hover {
   }
 }
 @media (width < 500px) {
-  .cardtext {
-    overflow: auto !important;
+  .card .cardtext {
+    overflow: scroll;
   }
 }/*# sourceMappingURL=estilos.css.map */
