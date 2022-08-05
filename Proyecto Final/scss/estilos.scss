@@ -111,6 +111,8 @@ span{
     color:white;
 }
 
+
+
 /* proyecto */
 .tituloProyecto{
     margin: 35px;
@@ -210,19 +212,8 @@ i:hover{
 
 
 @media (width < 500px){
-    .card{ 
-        display:flex;
-        flex-direction: row;
-        flex-wrap:nowrap;
-        justify-content: center;
-    }
-
-    .card-img-top{
-        justify-content: flex-start;
-    }
-
-    .card-text{
-        visibility: hidden;
-        display:none;
+    .cardtext{
+        overflow: auto !important;
+        
     }
 }
