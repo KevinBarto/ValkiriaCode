@@ -1,40 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 $color1:rgb(58, 58, 58);
 $color2:rgb(1, 105, 1);
 
-.pag{
-    background-color:$color1;
+.pag {
+    background-color: $color1;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 
-.navbar{
-    background-color:$color1 !important;
+.navbar {
+    background-color: $color1 !important;
 }
 
-h1{
+h1 {
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     /* border-bottom: 2px solid white; */
     justify-content: start;
 }
 
-span{
-    color:$color2;
+span {
+    color: $color2;
     text-decoration: underline 2px white;
-    
+
 }
 
 
-.redes{
+.redes {
     height: 70px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 // .bordes{
@@ -43,10 +43,9 @@ span{
 //     border-radius: 5px;
 //     margin: 25px;
 //     padding: 0px 30px 30px 30px;
-    
+
 // }
-$bordecolor: (
-    color1:rgb(0, 255, 94),
+$bordecolor: (color1:rgb(0, 255, 94),
     color2:rgb(2, 79, 4),
     color3:rgb(61, 141, 4),
     color4:rgb(0, 128, 49),
@@ -54,35 +53,37 @@ $bordecolor: (
     color6:rgb(145, 238, 124),
 );
 
-@each $key, $value in $bordecolor {
+@each $key,
+$value in $bordecolor {
     .bordes--#{$key} {
         height: auto;
-        border:8px outset $value;
+        border: 8px outset $value;
         border-radius: 5px;
         margin: 25px;
         padding: 0px 30px 30px 30px;
-}
+    }
 }
 
 /* home */
-.contenido{
+.contenido {
     margin: 35px;
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 255px 255px;
 }
-.fotologo{
-    radius: 30px  !important;
+
+.fotologo {
+    radius: 30px !important;
 }
 
-.fotologo2{
+.fotologo2 {
     @extend .fotologo;
     // no anduvo por boostrap -.-
 
 }
 
-.titulo{
+.titulo {
     /* grid-column-start:2 ;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -92,11 +93,9 @@ $bordecolor: (
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     padding-top: 50px
-    
-
 }
 
-.parrafo{
+.parrafo {
     /* grid-column-start:2 ;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -108,20 +107,20 @@ $bordecolor: (
 }
 
 
-.fotohabilidades{
+.fotohabilidades {
     width: 500px;
 }
 
-.fotoreact{
+.fotoreact {
     width: 255px;
-    grid-column-start:1 ;
+    grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
-    grid-row-end: 3; 
-} 
+    grid-row-end: 3;
+}
 
 /* equipo */
-.contenidoEquipo{
+.contenidoEquipo {
     margin: 35px;
     padding: 30px;
     display: grid;
@@ -129,107 +128,107 @@ $bordecolor: (
     grid-template-rows: 255px 255px;
 }
 
-.card{
+.card {
     margin: 30px;
-    color:white;
+    color: white;
 }
 
 
 
 /* proyecto */
-.tituloProyecto{
+.tituloProyecto {
     margin: 35px;
     padding: 30px;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
-.proyectos{
+.proyectos {
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content:start;
+    justify-content: start;
 }
+
 /* contacto */
-.contacto{
+.contacto {
     margin: 35px;
     padding: 30px;
     width: auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-input{
+input {
     justify-content: end;
     background-color: gray;
-    color:aliceblue
+    color: aliceblue
 }
 
-textarea{
+textarea {
     justify-content: end;
     background-color: gray;
-    color:aliceblue
+    color: aliceblue
 }
 
-label{
+label {
     background-color: $color2;
-    border-radius:20% 2px solid black ;
+    border-radius: 20% 2px solid black;
     text-align: center;
-    justify-content:start;
+    justify-content: start;
 }
 
 /* footer */
-.pie{
+.pie {
     border-top: 2px solid #042903;
     text-align: center;
     background-color: $color2;
-    padding:30px ;
+    padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 50px;
 }
 
-.derechos{
-    color:white;
+.derechos {
+    color: white;
     grid-area: 1/1/2/2
 }
 
-.contactosPie{
+.contactosPie {
     color: white;
     grid-area: 2/2 3/3;
 }
 
-i{
+i {
     font-size: 30px;
     padding: 10px;
     cursor: pointer;
 }
 
-i:hover{
+i:hover {
     transform: scaleY(5px);
-    transition: 0,7s;
+    transition: 0, 7s;
 }
 
 
 
-@media (width < 950px){
-    
-.contenido{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: 10px;
-    
-}
+@media (width < 950px) {
 
-.fotologo{
-    height: 105vh;
-}
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: 10px;
 
-.titulo{
-    padding: 30px;
-    text-decoration: underline 2px $color2;
-}  
-}
+    }
 
+    .fotologo {
+        height: 105vh;
+    }
+
+    .titulo {
+        padding: 30px;
+        text-decoration: underline 2px $color2;
+    }
+}
