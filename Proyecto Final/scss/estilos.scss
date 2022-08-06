@@ -74,7 +74,8 @@ $value in $bordecolor {
 }
 
 .fotologo {
-    border-radius: 30px !important;
+    min-width: 300px !important;
+    
 }
 
 .fotologo2 {
@@ -224,7 +225,7 @@ i:hover {
     }
 
     .fotologo {
-        height: 105vh;
+        height: 50vh;
     }
 
     .titulo {
