@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pag {
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: rgb(58, 58, 58) !important;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* border-bottom: 2px solid white; */
+  justify-content: start;
+}
+
+span {
+  color: rgb(1, 105, 1);
+  -webkit-text-decoration: underline 2px white;
+          text-decoration: underline 2px white;
+}
+
+.redes {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bordes--color1 {
+  height: auto;
+  border: 8px outset rgb(0, 255, 94);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color2 {
+  height: auto;
+  border: 8px outset rgb(2, 79, 4);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color3 {
+  height: auto;
+  border: 8px outset rgb(61, 141, 4);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color4 {
+  height: auto;
+  border: 8px outset rgb(0, 128, 49);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color5 {
+  height: auto;
+  border: 8px outset rgb(113, 187, 113);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+.bordes--color6 {
+  height: auto;
+  border: 8px outset rgb(145, 238, 124);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 0px 30px 30px 30px;
+}
+
+/* home */
+.contenido {
+  margin: 35px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 255px 255px;
+}
+
+.fotologo, .fotologo2 {
+  min-width: 300px !important;
+}
+
+.titulo {
+  /* grid-column-start:2 ;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2; */
+  grid-area: 1/2/2/3;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.parrafo {
+  /* grid-column-start:2 ;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+  grid-area: 2/2/3/3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: black;
+}
+
+.fotohabilidades {
+  width: 500px;
+}
+
+.fotoreact {
+  width: 255px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* equipo */
+.contenidoEquipo {
+  margin: 35px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 255px 255px;
+}
+
+.card {
+  margin: 30px;
+  color: white;
+}
+
+/* proyecto */
+.tituloProyecto {
+  margin: 35px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.proyectos {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+/* contacto */
+.contacto {
+  margin: 35px;
+  padding: 30px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input {
+  justify-content: end;
+  background-color: gray;
+  color: aliceblue;
+}
+
+textarea {
+  justify-content: end;
+  background-color: gray;
+  color: aliceblue;
+}
+
+label {
+  background-color: rgb(1, 105, 1);
+  border-radius: 20% 2px solid black;
+  text-align: center;
+  justify-content: start;
+}
+
+/* footer */
+.pie {
+  border-top: 2px solid #042903;
+  text-align: center;
+  background-color: rgb(1, 105, 1);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px;
+}
+
+.derechos {
+  color: white;
+  grid-area: 1/1/2/2;
+}
+
+.contactosPie {
+  color: white;
+  grid-area: 2/2 3/3;
+}
+
+i {
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+i:hover {
+  transform: scaleY(5px);
+  transition: 0, 7s;
+}
+
+@media (width < 950px) {
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 10px;
+  }
+  .fotologo, .fotologo2 {
+    height: 50vh;
+  }
+  .titulo {
+    padding: 30px;
+    -webkit-text-decoration: underline 2px rgb(1, 105, 1);
+            text-decoration: underline 2px rgb(1, 105, 1);
+  }
+}/*# sourceMappingURL=estilos.css.map */
